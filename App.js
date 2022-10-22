@@ -2,6 +2,7 @@ import globalStyles from './assets/styles/global';
 import { Text, View } from 'react-native';
 import { NativeBaseProvider, Spinner } from 'native-base';
 import { group } from './assets/js/objects';
+import GroupInfo from './assets/components/GroupInfo';
 import { useCallback, useEffect, useState } from 'react';
 import * as Font from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
@@ -50,7 +51,7 @@ export default function App() {
       style={globalStyles.screen}
       onLayout={onLayoutRootView}
     >
-      <Text>Hello</Text>
+      <GroupInfo />
     </View>
   );
 }
