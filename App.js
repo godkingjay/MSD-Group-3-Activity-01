@@ -1,5 +1,6 @@
 import globalStyles from './assets/styles/global';
 import { Text, View } from 'react-native';
+import { NativeBaseProvider, Spinner } from 'native-base';
 import { group } from './assets/js/objects';
 import { useCallback, useEffect, useState } from 'react';
 import * as Font from 'expo-font';
@@ -35,7 +36,13 @@ export default function App() {
   } ,[appIsReady])
 
   if(!appIsReady) {
-    return null;
+    return (
+      <NativeBaseProvider>
+        <View style={globalStyles.spinner}>
+          <Spinner color="blue.500" size='lg'/>
+        </View>
+      </NativeBaseProvider>
+    );
   }
 
   return(
