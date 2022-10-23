@@ -4,8 +4,7 @@ const globalStyles = StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
+    height: '100%',
     position: 'relative',
   },
   spinner: {
@@ -19,7 +18,13 @@ const globalStyles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
-  }
+  },
+  main: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+  },
 });
 
 export default globalStyles;

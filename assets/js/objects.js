@@ -5,7 +5,10 @@ export const group = {
   degree: 'Bachelor of Science in Computer Science',
   members: [
     'Jarrian Vince G. Gojar',
-    'Jake Gamab',
+    'Daniel Bong C. Fulgar',
+    'Rafaela Gordola',
+    'Jessa R. Palero',
+    'Jake G. Gamab'
   ],
   projectTitle: 'Authentic Pinoy Recipes',
   projectCategory: 'Recipe'
@@ -32,6 +35,20 @@ export const appTheme = {
         bg: '#27AA80',
         text: 'white'
       }
+    },
+    member: {
+      bg: '#2E0249',
+      text: 'white',
+      border: '#E80F88',
+      members: {
+        bg: '#2E0249',
+        text: 'white',
+        border: '#E80F88',
+        number: {
+          bg: '#AF0171',
+          text: 'white',
+        }
+      },
     }
   }
 }
