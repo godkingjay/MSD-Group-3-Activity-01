@@ -1,7 +1,6 @@
-import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 import { TouchableOpacity } from "react-native";
-import { FlatList, Image, Linking, StyleSheet, Text, View } from "react-native";
+import { Image, Linking, StyleSheet, Text, View } from "react-native";
 import { Icon } from "react-native-elements";
 import { group, appTheme } from "../js/objects";
 

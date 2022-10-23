@@ -1,9 +1,7 @@
 import globalStyles from './assets/styles/global';
-import { ScrollView, Text, View } from 'react-native';
-import { NativeBaseProvider, Spinner } from 'native-base';
-import { group, appTheme } from './assets/js/objects';
+import { ScrollView, View } from 'react-native';
+import { appTheme } from './assets/js/objects';
 import GroupInfo from './assets/components/GroupInfo';
-import { useCallback, useEffect, useState } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default function App() {
