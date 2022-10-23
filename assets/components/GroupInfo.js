@@ -59,9 +59,8 @@ const styles = StyleSheet.create({
   },
   groupAlias: {
     flex: 1,
-    padding: 12,
     letterSpacing: 2,
-    fontSize: 24,
+    fontSize: 32,
     textTransform: 'uppercase',
     fontWeight: 'bold',
     textAlign: 'center',
