@@ -195,6 +195,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
+    elevation: 8
   },
   projectInfo: {
     display: 'flex',
@@ -220,7 +221,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 12
+    paddingHorizontal: 12,
+    elevation: 8
   },
   projectTitle: {
     color: appTheme.card.projectInfo.title.text,
@@ -240,6 +242,7 @@ const styles = StyleSheet.create({
     maxWidth: 172,
     borderWidth: 1,
     borderColor: appTheme.card.projectInfo.category.border,
+    elevation: 8
   },
   projectCategoryLabel: {
     flex: 1,
