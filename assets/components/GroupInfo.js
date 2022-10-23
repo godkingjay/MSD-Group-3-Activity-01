@@ -53,6 +53,7 @@ export default function GroupInfo(){
 
 const styles = StyleSheet.create({
   wrapper: {
+    height: '100%',
     width: '100%',
     padding: 32,
     flex: 1,
@@ -74,8 +75,7 @@ const styles = StyleSheet.create({
   infoCtn: {
     flex: 1.5,
     width: '100%',
-    maxWidth: 498,
-    paddingHorizontal: 24,
+    maxWidth: 416,
     paddingVertical: 8,
     alignItems: 'center',
     display: 'flex',
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
     width: '100%',
     justifyContent: 'center',
-    paddingHorizontal: 32,
+    paddingHorizontal: 16,
     alignItems: 'center',
   },
   memberHeader: {
@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
   projectInfo: {
     display: 'flex',
     marginVertical: 12,
-    marginBottom: 8,
+    marginBottom: 12,
     alignItems: 'center',
     justifyContent: 'center',
   },

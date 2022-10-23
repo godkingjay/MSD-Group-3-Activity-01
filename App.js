@@ -14,7 +14,7 @@ export default function App() {
         style={ globalStyles.container }
       >
         <ScrollView style={ globalStyles.main }>
-          <GroupInfo/>
+          <GroupInfo />
         </ScrollView>
       </LinearGradient>
     </View>
