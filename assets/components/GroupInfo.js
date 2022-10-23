@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   groupHeader: {
     backgroundColor: appTheme.card.header.bg,
     width: '100%',
-    height: 64,
+    height: 56,
     borderWidth: 2,
     borderColor: appTheme.card.header.border,
     borderRadius: 100,
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   groupAlias: {
     flex: 1,
     letterSpacing: 2,
-    fontSize: 32,
+    fontSize: 28,
     textTransform: 'uppercase',
     fontWeight: 'bold',
     textAlign: 'center',
@@ -84,7 +84,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     paddingHorizontal: 8,
     paddingLeft: 16,
-    paddingVertical: 2,
     color: appTheme.card.number.label,
     textTransform: 'uppercase',
     fontWeight: 'bold',
