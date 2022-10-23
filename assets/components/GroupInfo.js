@@ -163,7 +163,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginVertical: 4,
     elevation: 8,
-    backgroundColor: 'white',
     borderRadius: 100,
     width: '90%',
     height: 28,
