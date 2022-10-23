@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "expo": "~46.0.16",
+    "expo-linear-gradient": "^11.4.0",
     "expo-splash-screen": "^0.16.2",
     "expo-status-bar": "~1.4.0",
     "native-base": "^3.4.19",
