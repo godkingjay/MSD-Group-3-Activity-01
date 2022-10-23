@@ -49,6 +49,15 @@ export const appTheme = {
           text: 'white',
         }
       },
+    },
+    projectInfo: {
+      label: 'white',
+      title: {
+        bg: '#2E0249',
+        text: 'white',
+        border: '#FD841F',
+        link: '#FD841F'
+      }
     }
   }
 }

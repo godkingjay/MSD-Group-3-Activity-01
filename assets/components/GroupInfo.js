@@ -1,6 +1,8 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
-import { FlatList, Image, StyleSheet, Text, View } from "react-native";
+import { TouchableOpacity } from "react-native";
+import { FlatList, Image, Linking, StyleSheet, Text, View } from "react-native";
+import { Icon } from "react-native-elements";
 import { group, appTheme } from "../js/objects";
 
 export default function GroupInfo(){
@@ -32,12 +34,15 @@ export default function GroupInfo(){
           })}
         </View>
         <View style={ styles.projectInfoCtn }>
-          <View>
-            <Text>Project Title</Text>
-            <Text>{ group.projectTitle }</Text>
+          <View style={ styles.projectInfo }>
+            <Text style={ styles.projectInfoLabel }>Project Title</Text>
+            <TouchableOpacity activeOpacity={0.75} style={ styles.projectTitleCtn } onPress={() => Linking.openURL('https://github.com/godkingjay/Expo-Pinoy-Foods')}>
+              <Icon type="material-icons" name="link" color={ appTheme.card.projectInfo.title.link }/>
+              <Text style={ styles.projectTitle }>{ group.projectTitle }</Text>
+            </TouchableOpacity>
           </View>
-          <View>
-            <Text>Project Category</Text>
+          <View style={ styles.projectInfo }>
+            <Text style={ styles.projectInfoLabel }>Project Category</Text>
             <Text>{ group.projectCategory }</Text>
           </View>
         </View>
@@ -186,6 +191,42 @@ const styles = StyleSheet.create({
     textAlignVertical: 'center'
   },
   projectInfoCtn: {
-    marginVertical: 24
+    marginVertical: 12,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  projectInfo: {
+    display: 'flex',
+    marginVertical: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  projectInfoLabel: {
+    textTransform: 'uppercase',
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: appTheme.card.projectInfo.label,
+    marginBottom: 4
+  },
+  projectTitleCtn: {
+    backgroundColor: appTheme.card.projectInfo.title.bg,
+    borderWidth: 2,
+    borderColor: appTheme.card.projectInfo.title.border,
+    paddingVertical: 4,
+    borderRadius: 100,
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 12
+  },
+  projectTitle: {
+    color: appTheme.card.projectInfo.title.text,
+    fontSize: 20,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    fontWeight: 'bold',
+    paddingLeft: 8
   }
 });
