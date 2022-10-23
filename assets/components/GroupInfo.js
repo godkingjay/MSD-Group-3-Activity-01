@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
   groupNumberCtn: {
     display: 'flex',
     flexDirection: 'row',
+    height: 32,
     maxHeight: 32,
     alignItems: 'center',
     marginVertical: 8,
