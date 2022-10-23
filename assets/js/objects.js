@@ -57,6 +57,15 @@ export const appTheme = {
         text: 'white',
         border: '#FD841F',
         link: '#FD841F'
+      },
+      category: {
+        bg: '#2E0249',
+        text: 'white',
+        border: '#5BB318',
+        label: {
+          bg: '#5BB318',
+          text: 'black',
+        }
       }
     }
   }

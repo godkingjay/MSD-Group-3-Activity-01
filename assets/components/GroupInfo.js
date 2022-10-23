@@ -41,9 +41,9 @@ export default function GroupInfo(){
               <Text style={ styles.projectTitle }>{ group.projectTitle }</Text>
             </TouchableOpacity>
           </View>
-          <View style={ styles.projectInfo }>
-            <Text style={ styles.projectInfoLabel }>Project Category</Text>
-            <Text>{ group.projectCategory }</Text>
+          <View style={ styles.projectCategoryCtn }>
+            <Text style={ styles.projectCategoryLabel }>Project Category</Text>
+            <Text style={ styles.projectCategory }>{ group.projectCategory }</Text>
           </View>
         </View>
       </View>
@@ -199,6 +199,7 @@ const styles = StyleSheet.create({
   projectInfo: {
     display: 'flex',
     marginVertical: 12,
+    marginBottom: 8,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -228,5 +229,40 @@ const styles = StyleSheet.create({
     textAlignVertical: 'center',
     fontWeight: 'bold',
     paddingLeft: 8
+  },
+  projectCategoryCtn: {
+    display: 'flex',
+    flexDirection: 'row',
+    backgroundColor: appTheme.card.projectInfo.category.bg,
+    borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    maxWidth: 172,
+    borderWidth: 1,
+    borderColor: appTheme.card.projectInfo.category.border,
+  },
+  projectCategoryLabel: {
+    flex: 1,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    fontWeight: 'bold',
+    color: appTheme.card.projectInfo.category.label.text,
+    backgroundColor: appTheme.card.projectInfo.category.label.bg,
+    borderTopLeftRadius: 100,
+    borderBottomLeftRadius: 100,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    textTransform: 'uppercase',
+    fontSize: 10,
+  },
+  projectCategory: {
+    flex: 1.75,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    height: '100%',
+    color: appTheme.card.projectInfo.category.text,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    fontSize: 16,
   }
 });
