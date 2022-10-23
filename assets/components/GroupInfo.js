@@ -12,6 +12,10 @@ export default function GroupInfo(){
         <View style={ styles.groupHeader }>
           <Text style={ styles.groupAlias }>{ group.alias }</Text>
         </View>
+        <View style={ styles.groupNumberCtn }>
+          <Text style={ styles.groupNumberLabel }>Group No.</Text>
+          <Text style={ styles.groupNumberValue }>{ group.number }</Text>
+        </View>
       </View>
     </View>
   );
@@ -52,9 +56,6 @@ const styles = StyleSheet.create({
     borderColor: appTheme.card.header.border,
     borderRadius: 100,
     elevation: 8,
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
   },
   groupAlias: {
     flex: 1,
@@ -65,6 +66,39 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     textAlignVertical: 'center',
-    color: appTheme.card.alias.text
+    color: appTheme.card.header.alias.text,
   },
+  groupNumberCtn: {
+    display: 'flex',
+    flexDirection: 'row',
+    maxHeight: 32,
+    alignItems: 'center',
+    marginVertical: 8,
+    backgroundColor: appTheme.card.number.bg,
+    borderRadius: 64,
+    borderWidth: 1,
+    borderColor: appTheme.card.number.border,
+    elevation: 8
+  },
+  groupNumberLabel: {
+    fontSize: 16,
+    paddingHorizontal: 8,
+    paddingLeft: 16,
+    paddingVertical: 2,
+    color: appTheme.card.number.label,
+    textTransform: 'uppercase',
+    fontWeight: 'bold',
+    textAlignVertical: 'center',
+  },
+  groupNumberValue: {
+    aspectRatio: 1,
+    height: '100%',
+    backgroundColor: appTheme.card.number.value.bg,
+    color: appTheme.card.number.value.text,
+    borderRadius: 32,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    fontWeight: 'bold',
+    fontSize: 20,
+  }  
 });

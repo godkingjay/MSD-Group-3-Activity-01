@@ -19,15 +19,19 @@ export const appTheme = {
   card: {
     header: {
       bg: '#2E0249',
-      border: '#FF4949'
-    },
-    alias: {
-      text: 'white'
+      border: '#FF4949',
+      alias: {
+        text: 'white'
+      },
     },
     number: {
-      bg: '#804040',
-      border: '#FF4949',
-      text: 'white'
+      bg: '#2E0249',
+      border: '#08FFC8',
+      label: 'white',
+      value: {
+        bg: '#27AA80',
+        text: 'white'
+      }
     }
   }
 }
