@@ -101,6 +101,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'center',
     color: appTheme.card.header.alias.text,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   groupNumberCtn: {
     display: 'flex',
@@ -157,6 +160,9 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     fontWeight: 'bold',
     color: appTheme.card.degree.label.text,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   degreeText: {
     textAlign: 'center',
