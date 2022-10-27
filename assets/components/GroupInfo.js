@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     elevation: 8,
   },
   degreeLabel: {
-    padding: 8,
+    paddingVertical: 4,
     paddingHorizontal: 12,
     textAlign: 'center',
     textAlignVertical: 'center',
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     textAlignVertical: 'center',
     paddingHorizontal: 16,
     flex: 1,
-    paddingVertical: 8,
+    paddingVertical: 4,
     fontSize: 16,
     fontWeight: 'bold',
     color: appTheme.card.degree.text,
