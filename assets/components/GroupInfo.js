@@ -19,6 +19,10 @@ export default function GroupInfo(){
           <Text style={ styles.groupNumberLabel }>Group No.</Text>
           <Text style={ styles.groupNumberValue }>{ group.number }</Text>
         </View>
+        <View style={ styles.degreeCtn }>
+          <Text style={ styles.degreeLabel }>Degree</Text>
+          <Text style={ styles.degreeText }>{ group.degree }</Text>
+        </View>
         <View style={ styles.membersCtn }>
           <View style={ styles.memberHeader }>
             <Text style={ styles.memberHeaderText }>Members</Text>
