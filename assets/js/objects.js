@@ -1,6 +1,6 @@
 export const group = {
   logo: require('../images/group-logo.png'),
-  alias: 'Group Alias',
+  alias: 'React Natives',
   number: 3,
   degree: 'Bachelor of Science in Computer Science',
   members: [
