@@ -135,11 +135,44 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
   },
-  membersCtn: {
+  degreeCtn: {
+    width: '92%',
     marginTop: 16,
-    width: '100%',
-    justifyContent: 'center',
+    flexDirection: 'row',
+    backgroundColor: appTheme.card.degree.bg,
+    borderWidth: 2,
+    borderColor: appTheme.card.degree.border,
+    borderRadius: 100,
+    elevation: 8,
+  },
+  degreeLabel: {
+    padding: 8,
+    paddingHorizontal: 12,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    backgroundColor: appTheme.card.degree.label.bg,
+    borderBottomLeftRadius: 100,
+    borderTopLeftRadius: 100,
+    fontSize: 16,
+    textTransform: 'uppercase',
+    fontWeight: 'bold',
+    color: appTheme.card.degree.label.text,
+  },
+  degreeText: {
+    textAlign: 'center',
+    textAlignVertical: 'center',
     paddingHorizontal: 16,
+    flex: 1,
+    paddingVertical: 8,
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: appTheme.card.degree.text,
+    textTransform: 'capitalize',
+  },
+  membersCtn: {
+    marginVertical: 12,
+    width: '92%',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   memberHeader: {
@@ -201,17 +234,16 @@ const styles = StyleSheet.create({
   },
   projectInfo: {
     display: 'flex',
-    marginVertical: 12,
     marginBottom: 12,
     alignItems: 'center',
     justifyContent: 'center',
   },
   projectInfoLabel: {
     textTransform: 'uppercase',
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
     color: appTheme.card.projectInfo.label,
-    marginBottom: 4
+    marginBottom: 8
   },
   projectTitleCtn: {
     backgroundColor: appTheme.card.projectInfo.title.bg,

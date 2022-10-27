@@ -36,6 +36,15 @@ export const appTheme = {
         text: 'white'
       }
     },
+    degree: {
+      bg: '#2E0249',
+      text: 'white',
+      border: '#31E1F7',
+      label: {
+        bg: '#31E1F7',
+        text: 'black',
+      }
+    },
     member: {
       bg: '#2E0249',
       text: 'white',
